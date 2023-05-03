@@ -7,11 +7,11 @@ export const CartContext = createContext({
 });
 
 export const CartProvider = ({ children }) => {
-    const [products, setCart] = useState([]);
+    const [cart, setCart] = useState([]);
 
     const clearCart = () => cart = [];
 
     const value = { cart, setCart, clearCart };
 
-    return <ProductsContext.Provider value={value}>{children}</ProductsContext.Provider>
+    return <CartContext.Provider value={value}>{children}</CartContext.Provider>
 }
