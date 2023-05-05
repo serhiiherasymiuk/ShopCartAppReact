@@ -26,10 +26,10 @@ export function Products() {
       <ul>
         {products.map((product) => (
           <li key={product.id}>
-            {product.name} - {product.price}
-            <button onClick={() => AddProductToCart(product)}>Add to Cart</button>
-            <button onClick={() => RemoveFromCart(product.id)}>Remove from Cart</button>
-          </li>
+          {product.name} - {product.price}
+          <button onClick={() => AddProductToCart(product)}>Add to Cart</button>
+          <button onClick={() => RemoveFromCart(product.id)}>Remove from Cart</button>
+        </li>
         ))}
       </ul>
     </div>
